@@ -16,7 +16,7 @@ jobs:
           path: 'www1'
 
       - name: Build Docker Image 👷🏻‍♂️
-        run: docker build . -t www1
+        run: docker build www1/ -t www1
 
       - name: Remove exist container 🚀
         run: docker rm -f www1
