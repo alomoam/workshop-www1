@@ -22,6 +22,6 @@ jobs:
         run: docker rm -f www1
   #network backend
       - name: Run Docker Container
-        run: docker run -p 8088:80 --network backend --name www1 --restart always -d www1
+        run: docker run -p 10.20.30.3:8088:80 --network backend --name www1 --restart always -d www1
 
 
